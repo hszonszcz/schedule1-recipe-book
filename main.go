@@ -132,6 +132,7 @@ func initializeGameData() ([]*BaseDrug, []*Reagent) {
 		{Name: "Green Crack", Effects: []Effect{Energizing}},
 		{Name: "Granddady Purple", Effects: []Effect{Sedating}},
 		{Name: "Meth", Effects: []Effect{}},
+		{Name: "Cocaine", Effects: []Effect{}},
 	}
 
 	reagents := []*Reagent{
