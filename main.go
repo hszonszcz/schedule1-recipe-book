@@ -391,30 +391,6 @@ func FindShortestRecipe(desired []Effect, base *BaseDrug, reagents []*Reagent) [
 	return nil // No recipe found
 }
 
-// func applyReagent(current []Effect, reagent *Reagent) []Effect {
-// 	effectMap := make(map[Effect]bool)
-// 	for _, e := range current {
-// 		effectMap[e] = true
-// 	}
-
-// 	for _, rule := range reagent.Rules {
-// 		if effectMap[rule.Condition] {
-// 			delete(effectMap, rule.Condition)
-// 			effectMap[rule.Replacement] = true
-// 		}
-// 	}
-
-// 	for _, e := range reagent.Effects {
-// 		effectMap[e] = true
-// 	}
-
-// 	var result []Effect
-// 	for e := range effectMap {
-// 		result = append(result, e)
-// 	}
-// 	return result
-// }
-
 func applyReagent(current []Effect, reagent *Reagent) []Effect {
 	// Create a working copy
 	newEffects := make(map[Effect]bool)
@@ -474,8 +450,8 @@ func containsAll(have []Effect, want []Effect) bool {
 
 func main() {
 	if len(os.Args) < 1 {
-		fmt.Println("Usage: s1-recipes <efffect1> ...")
-		fmt.Println("Example: s1-recipes Spicy Energizing")
+		fmt.Println("Usage: s1recipes <efffect1> ...")
+		fmt.Println("Example: s1recipes Spicy Energizing")
 		return
 	}
 
