@@ -42,7 +42,7 @@ const (
 	Spicy            Effect = "Spicy"
 	ThoughtProvoking Effect = "Thought-Provoking"
 	Toxic            Effect = "Toxic"
-	TropicThunder    Effect = "Tropic Thunder"
+	TropicThunder    Effect = "Tropic-Thunder"
 	Zombifying       Effect = "Zombifying"
 )
 
