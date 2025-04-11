@@ -28,7 +28,7 @@ const (
 	Glowing          Effect = "Glowing"
 	Jennerising      Effect = "Jennerising"
 	Laxative         Effect = "Laxative"
-	LongFaced        Effect = "Long Faced"
+	LongFaced        Effect = "Long-Faced"
 	Munchies         Effect = "Munchies"
 	Paranoia         Effect = "Paranoia"
 	Refreshing       Effect = "Refreshing"
