@@ -32,7 +32,7 @@ const (
 	Munchies         Effect = "Munchies"
 	Paranoia         Effect = "Paranoia"
 	Refreshing       Effect = "Refreshing"
-	Schizophrenia    Effect = "Schizophrenia"
+	Schizophrenic    Effect = "Schizophrenic"
 	Sedating         Effect = "Sedating"
 	SeizureInducing  Effect = "Seizure-Inducing"
 	Shrinking        Effect = "Shrinking"
@@ -74,7 +74,7 @@ var effectColors = map[Effect]string{
 	Munchies:         "\033[38;2;201;110;87m",  // rgb(201, 110, 87)
 	Paranoia:         "\033[38;2;196;103;98m",  // rgb(196, 103, 98)
 	Refreshing:       "\033[38;2;178;254;152m", // rgb(178, 254, 152)
-	Schizophrenia:    "\033[38;2;100;90;253m",  // rgb(100, 90, 253)
+	Schizophrenic:    "\033[38;2;100;90;253m",  // rgb(100, 90, 253)
 	Sedating:         "\033[38;2;107;95;216m",  // rgb(107, 95, 216)
 	SeizureInducing:  "\033[38;2;254;233;0m",   // rgb(254, 233, 0)
 	Shrinking:        "\033[38;2;182;254;218m", // rgb(182, 254, 218)
@@ -204,7 +204,7 @@ func initializeGameData() ([]*BaseDrug, []*Reagent) {
 				{Condition: Focused, Replacement: Shrinking},
 				{Condition: Foggy, Replacement: Laxative},
 				{Condition: Glowing, Replacement: Disorienting},
-				{Condition: Schizophrenia, Replacement: Balding},
+				{Condition: Schizophrenic, Replacement: Balding},
 				{Condition: Sedating, Replacement: Munchies},
 				{Condition: Spicy, Replacement: Euphoric},
 				{Condition: TropicThunder, Replacement: Sneaky},
@@ -227,7 +227,7 @@ func initializeGameData() ([]*BaseDrug, []*Reagent) {
 				{Condition: Energizing, Replacement: Munchies},
 				{Condition: Euphoric, Replacement: Sedating},
 				{Condition: Foggy, Replacement: Toxic},
-				{Condition: Munchies, Replacement: Schizophrenia},
+				{Condition: Munchies, Replacement: Schizophrenic},
 				{Condition: Paranoia, Replacement: AntiGravity},
 			},
 		},
